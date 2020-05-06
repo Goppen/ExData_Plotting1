@@ -12,5 +12,6 @@ head(daysofinterest$DateTime)
 
 png("plot2.png")
 
-plot(daysofinterest$DateTime, daysofinterest$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
+plot(daysofinterest$DateTime, as.numeric(as.character(daysofinterest$Global_active_power)), type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
 dev.off()
+
